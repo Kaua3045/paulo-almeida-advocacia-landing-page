@@ -25,13 +25,24 @@
     gtag('js', new Date());
 
     gtag('config', 'AW-17902202286');
+  </script>
 
-    function convertionToWhatsapp() {
+  <!-- Event snippet for Clique WhatsApp – Site conversion page
+  In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+  <script>
+  function gtag_report_conversion(url) {
+    var callback = function () {
+      if (typeof(url) != 'undefined') {
+        window.location = url;
+      }
+    };
     gtag('event', 'conversion', {
-      'send_to': 'AW-17902202286/COLE_AQUI_O_LABEL'
+        'send_to': 'AW-17902202286/zqxzCKKt3u4bEK7bt9hC',
+        'event_callback': callback
     });
+    return false;
   }
-</script>
+  </script>
 </head>
 <body>
 
@@ -48,7 +59,7 @@
     <a
       href="https://wa.me/555189568721?text=Ol%C3%A1!%20Vim%20pelo%20Google.%20Gostaria%20de%20tirar%20uma%20d%C3%BAvida%20sobre%20aposentadoria%20ou%20benef%C3%ADcio%20do%20INSS.%20Pode%20me%20orientar?"
       class="cta"
-      onclick="convertionToWhatsapp()"
+      onclick="return gtag_report_conversion(this.href);"
     >
       Falar com um Advogado Agora
     </a>
@@ -114,7 +125,7 @@
         <a
           href="https://wa.me/555189568721?text=Ol%C3%A1!%20Vim%20pelo%20Google.%20Gostaria%20de%20tirar%20uma%20d%C3%BAvida%20sobre%20aposentadoria%20ou%20benef%C3%ADcio%20do%20INSS.%20Pode%20me%20orientar?"
           class="cta"
-          onclick="convertionToWhatsapp()"
+          onclick="return gtag_report_conversion(this.href);"
         >
           Falar com Advogado Agora
         </a>
