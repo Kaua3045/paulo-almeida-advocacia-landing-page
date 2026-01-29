@@ -17,7 +17,21 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <!-- Meta Google Ads / Conversão -->
-  <!-- Inserir aqui sua tag de conversão do Google Ads -->
+   <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17902202286"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-17902202286');
+
+    function convertionToWhatsapp() {
+    gtag('event', 'conversion', {
+      'send_to': 'AW-17902202286/COLE_AQUI_O_LABEL'
+    });
+  }
+</script>
 </head>
 <body>
 
@@ -34,6 +48,7 @@
     <a
       href="https://wa.me/555189568721?text=Ol%C3%A1!%20Vim%20pelo%20Google.%20Gostaria%20de%20tirar%20uma%20d%C3%BAvida%20sobre%20aposentadoria%20ou%20benef%C3%ADcio%20do%20INSS.%20Pode%20me%20orientar?"
       class="cta"
+      onclick="convertionToWhatsapp()"
     >
       Falar com um Advogado Agora
     </a>
@@ -99,6 +114,7 @@
         <a
           href="https://wa.me/555189568721?text=Ol%C3%A1!%20Vim%20pelo%20Google.%20Gostaria%20de%20tirar%20uma%20d%C3%BAvida%20sobre%20aposentadoria%20ou%20benef%C3%ADcio%20do%20INSS.%20Pode%20me%20orientar?"
           class="cta"
+          onclick="convertionToWhatsapp()"
         >
           Falar com Advogado Agora
         </a>
